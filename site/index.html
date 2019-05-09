@@ -4,25 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" /> 
     <title>Smurdy Music</title>
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
     <div class="wrapper">
-        <header class="header-home">
+        <header>
             <div class="logo"></div>
 
             <nav>
-                <a onclick="slideLeft()" class="mobile-nav-buttons filler home-button" >Home</a>
-                <a onclick="slideLeft()" class="mobile-nav-buttons about" >About</a>
-                <!-- <a href="" class="mobile-nav-buttons" >Music</a>
-                    <a href="" class="mobile-nav-buttons" >Contact</a> -->
-                </nav>
-
-            </header>
+                <i onclick="slideRight()"class="material-icons arrow left-arrow">keyboard_arrow_left</i>
+                <i onclick="slideLeft()" class="material-icons arrow right-arrow">keyboard_arrow_right</i>
+                <!-- <div class="mobile-nav-text">Music</div>
+                <div class="mobile-nav-text" >Contact</div> -->
+            </nav>
             
-            <main class="main-home">
-                <h2 class="description">Smurdy is an Electronic &<br>Hip-Hop Music Producer</h2>
+        </header>
+        
+        <main class="main main-home">
+            <div class="mobile-nav-text">Home</div>
+            <h2 class="description">Smurdy is an Electronic &<br>Hip-Hop Music Producer</h2>
                 <p>Zack, is a Music Producer from<br>Gothenburg, Sweden who makes<br>Music that shares characteristics<br>with genres like Lo-Fi, Electronic,<br>Hip-Hop, Future Bass and Ambient.<br>This combined with various other<br>influences makes for a unique<br>signature sound.<br></p>
                 <div class="image-container"></div>
                 <div class="gradient">
@@ -30,34 +34,6 @@
                     <a href="https://open.spotify.com/artist/1DdapL4xLwTNSROT3YM5ga?si=uDddS3gKQVeOUZu_35f2Cw">
                         <div href="" class="spotify-logo"></div></a>
                     
-                    <div class="streaming-services">
-                        <a href="https://open.spotify.com/artist/1DdapL4xLwTNSROT3YM5ga?si=uDddS3gKQVeOUZu_35f2Cw" class="spotify icon"></a>
-                        <a href="https://www.youtube.com/channel/UCwIcHKBDfXW5rb3tNmVGsEA" class="youtube icon"></a>
-                        <a href="https://soundcloud.com/zack-sabirsh" class="soundcloud icon"></a>
-                        <a href="https://itunes.apple.com/us/artist/smurdy/1448679907" class="apple icon"></a>
-                        <a href="https://www.amazon.com/s?k=Smurdy&i=digital-music&search-type=ss&ref=ntt_srch_drd_B07MJM246T" class="amazon icon"></a>
-                        <a href="https://www.deezer.com/sv/artist/57285302" class="deezer icon"></a>
-                    </div>
-                </div>
-            </main>
-
-            <header class="header-about">
-                    <div class="logo"></div>
-        
-                    <nav>
-                        <a href="" class="mobile-nav-buttons home" >Home</a>
-                        <a href="" class="mobile-nav-buttons" >Music</a>
-                        <!-- <a href="" class="mobile-nav-buttons" >Music</a>
-                            <a href="" class="mobile-nav-buttons" >Contact</a> -->
-                        </nav>
-        
-                    </header>
-
-            <main class="main-about">
-                        <div class="listen">CLICK BELOW TO LISTEN</div>
-                        <a href="https://open.spotify.com/artist/1DdapL4xLwTNSROT3YM5ga?si=uDddS3gKQVeOUZu_35f2Cw">
-                            <div href="" class="spotify-logo"></div></a>
-                        
                         <div class="streaming-services">
                             <a href="https://open.spotify.com/artist/1DdapL4xLwTNSROT3YM5ga?si=uDddS3gKQVeOUZu_35f2Cw" class="spotify icon"></a>
                             <a href="https://www.youtube.com/channel/UCwIcHKBDfXW5rb3tNmVGsEA" class="youtube icon"></a>
@@ -68,7 +44,11 @@
                         </div>
                     </div>
                 </main>
-
+                
+        <main class="main main-about">
+            <div class="mobile-nav-text">About</div>
+            <div class="image-container-about">
+        </main>
     </div>
 
     <script src="js/main.js"></script>

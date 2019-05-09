@@ -1,16 +1,29 @@
+let aboutMain = document.querySelector(".main-about")
+let homeMain = document.querySelector(".main-home")
+let leftArrow = document.querySelector(".left-arrow")
+let rightArrow = document.querySelector(".right-arrow")
+
+
+let main = document.querySelectorAll(".main")
 function slideLeft(event){
-    let aboutMain = document.querySelector(".main-about")
-    aboutMain.classList.toggle("activate-left")
+    aboutMain.classList.add("activate-left")
+    homeMain.classList.add("activate-left")
+    aboutMain.classList.remove("activate-right")
+    homeMain.classList.remove("activate-right")
 
-    let homeButton = document.querySelector(".home-button")
-    homeButton.classList.remove("filler")
-    homeMain.classList.toggle("activate-lefter")
-    aboutMain.classList.toggle("activate-left")
+    rightArrow.style.opacity = "0"
+    leftArrow.style.opacity = "1"
 
-    let homeMain = document.querySelector(".main-home")
-    homeMain.classList.toggle("activate-lefter")
+}
 
-    // let homeHeader = document.querySelector(".header-home")
-    // homeHeader.innerHTML
+
+function slideRight(event){
+    aboutMain.classList.add("activate-right")
+    homeMain.classList.add("activate-right")
+    aboutMain.classList.remove("activate-left")
+    homeMain.classList.remove("activate-left")
+
+    rightArrow.style.opacity = "1"
+    leftArrow.style.opacity = "0"
 }
 

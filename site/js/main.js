@@ -14,6 +14,7 @@ function slideLeft(event){
     rightArrow.style.opacity = "0"
     leftArrow.style.opacity = "1"
 
+
 }
 
 

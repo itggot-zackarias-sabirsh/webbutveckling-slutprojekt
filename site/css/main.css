@@ -246,11 +246,13 @@ main{
     position: absolute;
     top: 100vh;
     opacity: 1;
+    padding: 0 2% 0 2%;
 }
 
 iframe{
+    width: 96%;
     margin-top: 2%;
-    height: 90%;
+    height: 90% ;
 }
 
 .activate-left{

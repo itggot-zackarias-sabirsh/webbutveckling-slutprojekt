@@ -59,6 +59,10 @@ nav{
     color: white;
 }
 
+.about-desktop{
+    display: none;
+}
+
 .filler-hidden{
     visibility: hidden;
 }
@@ -335,47 +339,63 @@ main{
   }
 
 
-/* Ipad landscape */
+/* Tablet landscape */
 @media (min-width: 768px) and (max-width: 1280px) and (orientation:landscape) {
 
-.logo{
-    
+    .logo{
+        width: 100%;
+        margin-left: 5vh;
+    }
+
+    .mobile-nav-text{
+        font-size: 1.5rem;
+        top: -1.65rem;
+    }
+
+    .text-box{
+        height: 80vh;
+        padding: 5vh 0 0 5vh;
+    }
+
+    .text-box h2, p{
+        margin: 0;
+        width: 80vw;
+        font-size: 2rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #2A2A2A;
+        z-index: 2;
+    }
+
+    .text-box h2{
+        font-size: 3rem;
+        margin-bottom: 3%;
+    }
+
+    .image-container{
+        background-position: bottom right;
+        background-size: 70%;
+    }
+
+    .spotify-promo{
+        height: 50vh;
+    }
+
+    .spotify-logo{
+        height: 300px;
+    }
+
+
+    .gradient{
+        height: 120vh;
+    }
+
+    .icon{
+        width: 10vw;
+        height: 10vw;
+    }
 }
 
-.mobile-nav-text{
-    font-size: 2rem;
-}
-
-.text-box{
-    height: 80vh;
-    padding: 5vh 0 0 5vh;
-}
-
-.text-box h2, p{
-    margin: 0;
-    width: 80vw;
-    font-size: 2rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #2A2A2A;
-    z-index: 2;
-}
-
-.text-box h2{
-    font-size: 3rem;
-    margin-bottom: 3%;
-}
-
-.image-container{
-    background-position: bottom right;
-    background-size: 70%;
-}
-
-.spotify-logo{
-    height: 300px;
-}
-}
-
-
+/* Desktop */
 @media screen and (min-width: 1281px) {
     
     .main-about{
@@ -384,16 +404,27 @@ main{
     
     .logo{
         background-image: url(../img/logo@desktop800x140.png);
-        margin-left: 5vw;
+        margin-left: 2vw;
     }
 
     header{
         justify-content: inherit;
     }
 
+
+    .mobile-nav-text{
+        display: none;
+    }
+
+    .menu-items-desktop{
+        display: block;
+    }
+    .text-box{
+        padding-left: 2vw;
+    }
+
     
     main h2, p{
-        margin: 5vw 0% 0% 5vw;
         width: 80vw;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-size: 6rem;
@@ -412,21 +443,36 @@ main{
     .image-container{
         background-image: url(../img/profile@desktop\ 1175x1175.jpg);
         background-size: cover;
-        background-repeat: no-repeat;
         width: 50vw;
         height: 50vw;
         position: absolute;
         right: 5vw;
-        top: 0;
-        z-index: -5;
-        opacity: 0.5;
     }
 
     .gradient{
-        background-image: linear-gradient(#FF2662, #FE2763, #E36587, #DC77AD, #69BAE4, #B8E7FF);
-        width: 100vw;
-        margin-top: 20vh;
-        padding-top: 5%;
+        height: 150vh;
+    }
+
+    .spotify-promo{
+        height: 75vh;
+    }
+
+    .listen{
+        font-size: 6rem;
+    }
+
+    .spotify-logo{
+        height: 50vh;
+        background-size: 60%;
+    }
+
+    .streaming-services{
+        height: 75vh;
+    }
+
+    .icon{
+        width: 10vw;
+        height: 10vw;
     }
 }
 

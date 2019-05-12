@@ -14,6 +14,10 @@ function slideLeft(event){
     rightArrow.style.opacity = "0"
     leftArrow.style.opacity = "1"
 
+    if (aboutMain.classList.contains("activate-left")){
+        aboutMain.style.transform = "200vw"
+    }
+
 
 }
 
